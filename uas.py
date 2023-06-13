@@ -14,7 +14,7 @@ selected2 = option_menu(None, ["Data", "Procecing data", "Modelling", 'Implement
 selected2
 
 #halaman Data
-if (selected2 == 'Data') :
+if (selected2 == '') :
     st.title('Deskripsi data')
 
     st.write("Ini adalah contoh data yang tersedia dalam aplikasi Streamlit.")
@@ -34,7 +34,7 @@ if (selected2 == 'Data') :
 
 
 #halaman procecing data 
-if (selected2 == 'Procecing data') :
+if (selected2 == '') :
     st.title('Procecing Data')
 
     st.write("Saya Melakukan Pre-processing data dengan metode Min - Max Scalar")
@@ -43,7 +43,7 @@ if (selected2 == 'Procecing data') :
     st.write(data)
 
 #halaman modelling
-if (selected2 == 'Modelling'):
+if (selected2 == ''):
     st.title('Modelling')
 
     pilih = st.radio('Pilih', ('Naive Bayes', 'Decision Tree', 'KNN', 'ANN'))
@@ -60,7 +60,7 @@ if (selected2 == 'Modelling'):
 
 #halaman implementasi
 # Load the saved model
-if (selected2 == 'Implementasi'):
+if (selected2 == ''):
     st.title('Implementasi')
 
 def calculate_risk(age, sex, blood_pressure, cholesterol, ratio, drug_type):
@@ -86,7 +86,7 @@ def calculate_risk(age, sex, blood_pressure, cholesterol, ratio, drug_type):
         return 
 
 def main():
-    st.title("Drug Risk Calculator")
+    st.title("Drug Classification")
 
     # Buat input fields untuk menerima input dari pengguna
     age = st.number_input("Usia", min_value=1, max_value=100)
@@ -98,7 +98,7 @@ def main():
 
     # Buat tombol untuk memulai perhitungan saat ditekan
     if st.button("Hitung Risiko"):
-        result = calculate_risk(age, sex, blood_pressure, cholesterol, ratio,)
+        result = calculate_risk(age, sex, blood_pressure, cholesterol, ratio)
         st.write("Hasil Perhitungan:")
         st.write(result)
 
