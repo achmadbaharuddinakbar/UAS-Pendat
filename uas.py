@@ -68,22 +68,8 @@ def calculate_risk(age, sex, blood_pressure, cholesterol, ratio, drug_type):
     # Misalnya, kamu dapat menggunakan algoritma atau rumus yang sesuai untuk menghitung risiko obat
 
     # Contoh sederhana untuk menunjukkan hasil perhitungan
-    
-    def klasifikasi_obat(drug_type, nama_obat):
-        if nama_obat in ['Y1', 'Y2', 'Y3']:
-            return 'Tipe Y'
-        elif nama_obat in ['C1', 'C2', 'C3']:
-            return 'Tipe C'
-        elif nama_obat in ['A1', 'A2', 'A3']:
-            return 'Tipe A'
-        elif nama_obat in ['B1', 'B2', 'B3']:
-            return 'Tipe B'
-        elif nama_obat in ['X1', 'X2', 'X3']:
-            return 'Tipe X'
-        else:
-            return 'Tipe obat tidak dikenali'
-        
-        return 
+    result = "Tipe obat"
+    return result
 
 def main():
     st.title("Drug Classification")
