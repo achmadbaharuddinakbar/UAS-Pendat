@@ -14,7 +14,7 @@ selected2 = option_menu(None, ["Data", "Procecing data", "Modelling", 'Implement
 selected2
 
 #halaman Data
-if (selected2 == '') :
+if (selected2 == 'Data') :
     st.title('Deskripsi data')
 
     st.write("Ini adalah contoh data yang tersedia dalam aplikasi Streamlit.")
@@ -34,7 +34,7 @@ if (selected2 == '') :
 
 
 #halaman procecing data 
-if (selected2 == '') :
+if (selected2 == 'Procecing data') :
     st.title('Procecing Data')
 
     st.write("Saya Melakukan Pre-processing data dengan metode Min - Max Scalar")
@@ -43,7 +43,7 @@ if (selected2 == '') :
     st.write(data)
 
 #halaman modelling
-if (selected2 == ''):
+if (selected2 == 'Modelling'):
     st.title('Modelling')
 
     pilih = st.radio('Pilih', ('Naive Bayes', 'Decision Tree', 'KNN', 'ANN'))
@@ -60,7 +60,7 @@ if (selected2 == ''):
 
 #halaman implementasi
 # Load the saved model
-if (selected2 == ''):
+if (selected2 == 'Implementasi'):
     st.title('Implementasi')
 
 def calculate_risk(age, sex, blood_pressure, cholesterol, ratio, drug_type):
