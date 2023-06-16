@@ -105,18 +105,18 @@ if (selected2 == 'Implementasi'):
         # Perform prediction when the button is pressed
         if st.button('Hitung'):
         # Determine the drug type based on the input features
-            if age <= 16:
-                drug_type = 'drug_type_1'
+             if age <= 16:
+                drug_type = 'Drug_X'
             elif age > 16 and sex == 'Male' and blood_pressure < 1 and cholesterol < 1 and sodium_potassium < 20.037:
-                drug_type = 'drug_type_2'
+                drug_type = 'Drug_A'
             elif age > 16 and sex == 'Female' and blood_pressure >= 1 and cholesterol >= 1 and sodium_potassium >= 20.037:
                 drug_type = 'drug_type_3'
             elif age > 16 and sex == 'Male' and blood_pressure >= 1 and cholesterol >= 1 and sodium_potassium < 20.037:
                 drug_type = 'drug_type_4'
             elif age > 16 and sex == 'Female' and blood_pressure < 1 and cholesterol < 1 and sodium_potassium >= 20.037:
-                drug_type = 'drug_type_5'
+                drug_type = 'Drug_Y'
             else:
-                drug_type = 'drug_type_6'
+                drug_type = 'Drug_C'
 
             st.write("Predicted Drug Type:", drug_type)
 
