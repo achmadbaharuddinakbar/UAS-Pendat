@@ -87,11 +87,11 @@ if (selected2 == 'Implementasi'):
         st.title('Drug Type')
 
         # Create input fields for the features
-        age = st.number_input('Age', min_value=0, max_value=100, value=30)
+        age = st.number_input('Age', min_value=0, max_value=100, value=0)
         sex = st.radio('Sex', ['Male', 'Female'])
-        blood_pressure = st.number_input('Blood Pressure (BP)', min_value=0, max_value=200, value=120)
-        cholesterol = st.number_input('Cholesterol', min_value=0, value=200)
-        sodium_potassium = st.number_input('Na to K (Sodium to Potassium ratio)', min_value=0, value=10)
+        blood_pressure = st.number_input('Blood Pressure (BP)', min_value=0, max_value=200, value=0)
+        cholesterol = st.number_input('Cholesterol', min_value=0, value=0)
+        sodium_potassium = st.number_input('Na to K (Sodium to Potassium ratio)', min_value=0, value=0)
         
         # Create a dictionary with the input data
         input_data = {
